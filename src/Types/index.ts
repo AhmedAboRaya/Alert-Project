@@ -1,0 +1,1 @@
+export type AlertTypes = "alert-upgrade" | "alert-note" | "alert-processed" | "alert-tips" | "alert-error"

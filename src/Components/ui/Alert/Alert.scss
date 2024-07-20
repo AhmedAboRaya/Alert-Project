@@ -1,0 +1,72 @@
+
+$borderColor: rgba(255, 25, 0, 0.322);
+$errorBg: #630f0552;
+$errorColor: rgb(245, 157, 148);
+
+$borderColorUpgrade: rgba(255, 255, 255, 0.288);
+$upgradeBg: rgba(250, 250, 250, 0.281);
+$upgradeColor: rgb(255, 255, 255);
+
+$borderColorNote: rgb(9, 16, 119);
+$noteBg: rgba(134, 150, 238, 0.521);
+$noteColor: rgb(175, 171, 231);
+
+$borderColorProcessed: rgb(83, 240, 96);
+$processedBg: rgba(96, 230, 70, 0.301);
+$processedColor: rgb(164, 233, 173);
+
+$borderColorTips: rgb(217, 236, 48);
+$tipsBg: rgba(236, 231, 148, 0.329);
+$tipsColor: rgb(235, 222, 165);
+
+
+
+
+
+@mixin alert( $name, $borderColor, $bgColor, $color ){
+    .#{$name}{
+        border: 0.15em dotted $borderColor;
+        padding: 0.8em;
+        border-radius: 0.8em;
+        padding: 2em;
+        background-color: $bgColor;
+        color: $color;
+        margin: 1em;
+    
+        .alert-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .title{
+                display: flex;
+                align-items: center;
+                
+                h3{
+                    margin-left: 0.3em;
+                    
+                }
+            }
+    
+            .close{
+                cursor: pointer;
+            }
+        }
+    
+        p{
+            text-align: left;
+            margin-top: 0.7em;
+        }
+        
+    }
+}
+
+@include alert("alert-upgrade", $borderColorUpgrade, $upgradeBg, $upgradeColor );
+
+@include alert("alert-note", $borderColorNote, $noteBg, $noteColor );
+
+@include alert("alert-processed", $borderColorProcessed, $processedBg, $processedColor );
+
+@include alert("alert-tips", $borderColorTips, $tipsBg, $tipsColor );
+
+@include alert("alert-error", $borderColor, $errorBg, $errorColor );
