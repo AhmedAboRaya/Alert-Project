@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Alert Project
 
 A simple Alert project built using React, TypeScript, and SASS.
