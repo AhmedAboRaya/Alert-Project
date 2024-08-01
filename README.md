@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Alert Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Alert project built using React, TypeScript, and SASS.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Overview
+This project demonstrates a simple alert component using React, TypeScript, and SASS. It showcases how to create a reusable alert component that can display different types of messages (e.g., success, error, warning, info).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
+- Reusable alert component
+- Support for different alert types
+- Customizable alert messages
+- Styled using SASS
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/AhmedAboRaya/Alert-Project.git
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Screenshots
+![screenshot](./Screenshot%202024-08-01%20155518.png)
