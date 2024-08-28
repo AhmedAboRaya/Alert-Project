@@ -18,10 +18,13 @@ This project demonstrates a simple alert component using React, TypeScript, and 
 - Customizable alert messages
 - Styled using SASS
 
+  
+
 ## Installation
 1. Clone the repository:
    ```sh
    git clone https://github.com/AhmedAboRaya/Alert-Project.git
+
 
 ## Screenshots
 ![screenshot](./Screenshot%202024-08-01%20155518.png)
